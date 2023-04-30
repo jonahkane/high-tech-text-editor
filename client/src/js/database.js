@@ -19,7 +19,7 @@ export const putDb = async (id, content) => {
   const tx = jateDb.transaction("jate", "readwrite");
   const store = tx.objectStore("jate");
   const request = store.put({ id: id, jate: content });
-  const result = awaite request;
+  const result = await request;
   console.log("Data saved to database", result);
 };
 
