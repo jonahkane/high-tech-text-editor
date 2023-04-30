@@ -24,7 +24,7 @@ export const putDb = async (id, content) => {
 };
 
 
-console.error('putDb not implemented');
+// console.error('putDb not implemented');
 
 // example from in class activities
 // export const putDb = async (id, content) => {
@@ -50,7 +50,7 @@ export const getAllDb = async () => {
   console.log("result.value", result);
   return result;
 };
- console.error('getDb not implemented');
+//  console.error('getDb not implemented');
 
 // example from in class activity
 // export const getAllDb = async () => {
