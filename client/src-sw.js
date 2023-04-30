@@ -3,7 +3,7 @@ const { StaleWhileRevalidate, CacheFirst } = require('workbox-strategies');
 const { precacheAndRoute } = require('workbox-precaching/precacheAndRoute');
 const { CacheableResponsePlugin } = require('workbox-cacheable-response');
 
-const { offlineFallback, warmStrategyCache } = require('workbox-recipes');
+const { warmStrategyCache } = require('workbox-recipes');
 const { ExpirationPlugin } = require('workbox-expiration');
 
 precacheAndRoute(self.__WB_MANIFEST);
