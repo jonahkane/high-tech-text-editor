@@ -24,20 +24,6 @@ export const putDb = async (id, content) => {
 };
 
 
-// console.error('putDb not implemented');
-
-// example from in class activities
-// export const putDb = async (id, content) => {
-//   console.log('PUT to the database');
-//   const todosDb = await openDB('todos', 1);
-//   const tx = todosDb.transaction('todos', 'readwrite');
-//   const store = tx.objectStore('todos');
-//   const request = store.put({ id: id, todo: content });
-//   const result = await request;
-//   console.log('🚀 - data saved to the database', result);
-// };
-
-
 
 // TODO: Add logic for a method that gets all the content from the database
 export const getDb = async () => {
@@ -50,19 +36,6 @@ export const getDb = async () => {
   console.log("result.value", result);
   return result;
 };
-//  console.error('getDb not implemented');
-
-// example from in class activity
-// export const getAllDb = async () => {
-//   console.log('GET all from the database');
-//   const todosDb = await openDB('todos', 1);
-//   const tx = todosDb.transaction('todos', 'readonly');
-//   const store = tx.objectStore('todos');
-//   const request = store.getAll();
-//   const result = await request;
-//   console.log('result.value', result);
-//   return result;
-// };
 
 
 initdb();
